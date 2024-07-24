@@ -10,7 +10,7 @@ function App() {
   const [chats, setChats] = useState([
     { id: 1, icon: 'https://cdn.discordapp.com/icons/1006938977422557254/7b83f794bd267128251903498b696e08.png', fullname: 'John Fisher' },
     { id: 2, icon: 'https://avt-16.foto.mail.ru/mail/shymatoff/_avatar180?', fullname: 'James Green' },
-    { id: 3, icon: 'http://is1.mzstatic.com/image/thumb/Purple111/v4/37/43/2c/37432c4f-5f7e-0e2c-eb95-557c91a1df02/pr_source.png/100x100bb-85.jpg', fullname: 'Kate Williams' }
+    { id: 3, icon: 'https://sommera5.ru/wp-content/uploads/2021/01/EuniceBrown-300x300.jpg', fullname: 'Kate Williams' }
   ])
 
   const defaultMessages = [
