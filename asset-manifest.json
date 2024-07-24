@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/dians1s/Chat-React.js-/static/css/main.8517e3a0.css",
-    "main.js": "/dians1s/Chat-React.js-/static/js/main.b9d08522.js",
-    "static/media/timesnewromanpsmt.ttf": "/dians1s/Chat-React.js-/static/media/timesnewromanpsmt.7297f324cec2911bc292.ttf",
-    "index.html": "/dians1s/Chat-React.js-/index.html",
-    "main.8517e3a0.css.map": "/dians1s/Chat-React.js-/static/css/main.8517e3a0.css.map",
-    "main.b9d08522.js.map": "/dians1s/Chat-React.js-/static/js/main.b9d08522.js.map"
+    "main.css": "/Chat-React.js-/static/css/main.ca989e72.css",
+    "main.js": "/Chat-React.js-/static/js/main.b9d08522.js",
+    "static/media/timesnewromanpsmt.ttf": "/Chat-React.js-/static/media/timesnewromanpsmt.7297f324cec2911bc292.ttf",
+    "index.html": "/Chat-React.js-/index.html",
+    "main.ca989e72.css.map": "/Chat-React.js-/static/css/main.ca989e72.css.map",
+    "main.b9d08522.js.map": "/Chat-React.js-/static/js/main.b9d08522.js.map"
   },
   "entrypoints": [
-    "static/css/main.8517e3a0.css",
+    "static/css/main.ca989e72.css",
     "static/js/main.b9d08522.js"
   ]
 }
