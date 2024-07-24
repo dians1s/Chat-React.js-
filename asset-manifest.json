@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Chat-React.js-/static/css/main.ca989e72.css",
-    "main.js": "/Chat-React.js-/static/js/main.b9d08522.js",
+    "main.js": "/Chat-React.js-/static/js/main.ee362f4d.js",
     "static/media/timesnewromanpsmt.ttf": "/Chat-React.js-/static/media/timesnewromanpsmt.7297f324cec2911bc292.ttf",
     "index.html": "/Chat-React.js-/index.html",
     "main.ca989e72.css.map": "/Chat-React.js-/static/css/main.ca989e72.css.map",
-    "main.b9d08522.js.map": "/Chat-React.js-/static/js/main.b9d08522.js.map"
+    "main.ee362f4d.js.map": "/Chat-React.js-/static/js/main.ee362f4d.js.map"
   },
   "entrypoints": [
     "static/css/main.ca989e72.css",
-    "static/js/main.b9d08522.js"
+    "static/js/main.ee362f4d.js"
   ]
 }
