@@ -1,0 +1,8 @@
+.MessageInput {
+    width: calc(100% - 72px);
+    min-width: none;
+    height: 16px;
+    border: 2px solid rgb(0, 0, 0, 0.3);
+    border-radius: 6px;
+    padding-left: 10px;
+}

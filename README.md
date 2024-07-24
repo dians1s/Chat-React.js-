@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+# Чат с контактами (React.js)
+Приложение, которое отображает список чатов с контактами, а также мессенджер с ними (без серверной части) с сохранением сообщений в localStorage. Часть контактов автоматически будут открыты, большинство из них нужно добавить на "+" слева сверху. 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Информация о пользователях находится в ./src/App.js:
+• chats (Заранее подготовленные открытые чаты)
+• contacts (Контакты с которыми можно открыть чат и добавить их в чат-меню)
+• defaultMessages (Массив со стандартными сообщениями, который будет передан пользователю если в localStorage его нет)
 
-## Available Scripts
+Выполненные цели и задачи:
+1) Список чатов.
+ - Содержит список сохраненных чатов отсортированных по дате получения\отправки сообщения.
+ - Текущий выбранный чат выделяется фоном отличным от других (по умолчанию выделяется первый в списке).
+ - При отправке сообщения, чат поднимается на первое место в списке.
+ - В чат меню у каждого чата отображается последнее отправленное сообщение с датой (до 13 символов).
+2) Создание чата.
+ - По клику на иконку + в шапке списка чатов открывается модальное окно со списком предустановленных контактов (13 шт.).
+ - Клик по контакту создает либо новый чат, либо выбирает уже существующий (с выбранным контактом).
+ - При создании чата, он сохраняется локально. (Сохраняется до перезагрузки страницы, т.е. без localStorage)
+3) История переписки.
+ - При создании нового чата, содержит предустановленные сообщения (входящее\исходящее).
+ - Содержит сообщения с выбранным контактом из списка чатов.
+ - Список отсортирован по дате получения сообщения снизу вверх (в самом низу отображается последнее полученное сообщение от контакта).
+4) Получение и отправка сообщений. 
+ - История сообщений сохраняется локально (localStorage).
+ - Отправленное сообщение появляется в истории переписки и сохраняется локально.
 
-In the project directory, you can run:
+## Установка (Linux)
+ВАЖНО: У вас должны быть установлены [зависимости проекта](https://github.com/dians1s/Chat-React.js-#зависимости)
+1. Необходимо склонировать репозиторий
 
-### `npm start`
+```git clone https://github.com/dians1s/Chat-React.js-.git```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. Переход в директорию 'Chat-React.js-'
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```cd Chat-React.js-```
 
-### `npm test`
+3. Можете запускать проект
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```npm run start```
 
-### `npm run build`
+## Поддержка
+Если у вас возникли какие-либо проблемы или вопросы по использованию, создайте [обсуждение](https://github.com/dians1s/Chat-React.js-/issues/new/choose) в данном репозитории или напишите на электронную почту <danis11255@gmail.com>.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Зависимости
+Запускалось и разрабатывалось на React 18.3.1 (С использованием react-icons: 5.2.1, react-modal: 3.16.1). Если вы заметили, что данное ПО можно запустить на версии ниже, или он не работает на какой-либо версии, то напишите в [поддержку](https://github.com/dians1s/Chat-React.js-#поддержка)

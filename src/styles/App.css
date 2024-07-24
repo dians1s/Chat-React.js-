@@ -1,0 +1,307 @@
+@font-face {
+    font-family: 'TimesNewRoman';
+    src: url('../fonts/timesnewromanpsmt.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.3s ease-in-out;
+    font-family: 'TimesNewRoman';
+    user-select: none;
+}
+
+
+
+#root {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.App {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #cccccc;
+}
+
+.App__ChatMenu {
+    width: 20%;
+    height: 100%;
+    border-right: 2px solid #cccccc;
+}
+
+.App__ChatMenu__CreateChatButton {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 8px;
+    border-bottom: 2px solid #cccccc;
+}
+
+.App__ChatMenu__ChatLists {
+    width: 100%;
+    height: calc(100%-40px);
+}
+
+.App__ChatMenu__ChatLists__PersonInChatLists {
+    display: flex;
+    width: 100%;
+    height: 56px;
+    border-bottom: 2px solid #cccccc;
+    cursor: pointer;
+    word-wrap: break-word;
+}
+
+.App__ChatMenu__ChatLists__PersonInChatLists:hover {
+    background-color: rgb(0, 0, 0, 0.4);
+}
+
+.App__ChatMenu__ChatLists__PersonInChatLists__PersonIconInChatLists img {
+    margin: 8px 12px;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    margin-right: 12px;
+}
+
+.App__ChatMenu__ChatLists__PersonInChatLists__PersonNameAndMessageInChatLists {
+    width: 100%;
+    height: 100%;
+    padding-top: 6px;
+    margin-right: 12px;
+}
+
+.App__ChatMenu__ChatLists__PersonInChatLists__PersonNameAndMessageInChatLists__PersonNameAndMessageInChatListsH2 {
+    font-size: 15px;
+    margin-bottom: 6px;
+}
+
+.App__ChatMenu__ChatLists__PersonInChatLists__PersonNameAndMessageInChatLists__LastmsgAndDate {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+}
+
+.App__ChatMenu__ChatLists__PersonInChatLists__PersonNameAndMessageInChatLists__LastmsgAndDate__PersonNameAndMessageInChatListsH3 {
+    font-size: 12px;
+    font-weight: 300;
+    justify-content: space-between;
+}
+
+.App__Chat {
+    width: 60%;
+    height: 100%;
+    border-right: 2px solid #cccccc;
+}
+
+.App__Chat__TopContact {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    align-items: center;
+    border-bottom: 2px solid #cccccc;
+    display: none;
+    visibility: hidden;
+}
+
+.App__Chat__TopContact__PersonIconAndNameInTopContact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.App__Chat__TopContact__PersonIconAndNameInTopContact__PersonIconInTopContact img {
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+}
+
+.App__Chat__TopContact__PersonIconAndNameInTopContact__PersonNameInTopContact {
+    padding-left: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    user-select: text;
+}
+
+.App__Chat__TopContact__PersonIconsCallVideoLike {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+.App__Chat__Messages {
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 42px);
+    border-bottom: 2px solid rgb(0, 0, 0, 0.2);
+}
+
+.App__Chat__MessagesNotFound {
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 42px);
+    border-bottom: 2px solid rgb(0, 0, 0, 0.2);
+    align-items: center;
+    justify-content: center;
+}
+
+.App__Chat__MessagesNotFound__PleaseSelectUserH1 {
+    font-size: 24pt;
+    padding: 12px 12px;
+    width: 61%;
+    color: rgb(31, 121, 128);
+}
+
+.App__Chat__Messages__GetMessageForPerson {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    height: 100%;
+    padding: 12px;
+    overflow-y: auto;
+    word-wrap: break-word;
+}
+
+.App__Chat__Messages__GetMessageForPerson__MessageForPerson,
+.App__Chat__Messages__GetMessageForPerson__MessageFromPerson {
+    max-width: 60%;
+    height: auto;
+    margin-top: 12px;
+    padding: 8px 12px;
+    border: 2px solid black;
+    text-align: center;
+    font-size: 14px;
+    color: #FFFFFF;
+    border-radius: 12px;
+    word-wrap: break-word;
+    user-select: text;
+}
+
+.LastMessage {
+    margin-top: auto;
+}
+
+.App__Chat__Messages__GetMessageForPerson__MessageForPerson {
+    align-self: flex-start;
+    color: #FFFFFF;
+    background-color: teal;
+}
+
+.App__Chat__Messages__GetMessageForPerson__MessageFromPerson {
+    align-self: flex-end;
+    color: #000000;
+    background-color: rgb(174, 159, 202);
+}
+
+.App__Chat__InputMessage {
+    max-width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 24px;
+}
+
+.App__ContactAside {
+    width: 20%;
+    height: 100%;
+    display: block;
+    visibility: visible;
+}
+
+.App__ContactAside__PersonBigIconAside {
+    display: flex;
+    padding: 10px 10px 12px 10px;
+    border-radius: 70px;
+    justify-content: center;
+}
+
+.App__ContactAside__PersonBigIconAside img {
+    width: 140px;
+    height: 140px;
+    border-radius: 70px;
+}
+
+.App__ContactAside__PersonNameContactAside {
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 12px;
+    user-select: text;
+}
+
+.App__ContactAside__IconsAside {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+}
+
+.App__ChatMenu__CreateChatButton__Contacts {
+    display: grid;
+    width: 100%;
+    height: 100%;
+}
+
+.App__ChatMenu__CreateChatButton__Contacts__Contact {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-size: 14px;
+    height: 60px;
+    cursor: pointer;
+    background-color: thistle;
+    color: rgb(44, 48, 51);
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.App__ChatMenu__CreateChatButton__Contacts__Contact:hover {
+    scale: 1.1;
+    transition: 200ms ease-in-out;
+}
+
+
+.App__ChatMenu__CreateChatButton__Contacts__Contact__Icon img {
+    margin-left: 10px;
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
+    margin-right: 10px;
+}
+
+.ReactModalPortal {
+    display: flex;
+}
+
+@media (max-width: 1024px) {
+    .App__ChatMenu {
+        width: 40%;
+    }
+
+    .App__Chat__Messages {
+        height: calc(100vh - 84px);
+    }
+
+    .App__Chat__MessagesNotFound {
+        height: calc(100vh - 84px);
+    }
+
+    .App__Chat__TopContact {
+        display: flex;
+        visibility: visible;
+    }
+
+    .App__ContactAside {
+        display: none;
+        visibility: hidden;
+    }
+}
