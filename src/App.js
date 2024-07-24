@@ -56,7 +56,7 @@ function App() {
   const [contacts] = useState([
     { id: 1, icon: 'https://cdn.discordapp.com/icons/1006938977422557254/7b83f794bd267128251903498b696e08.png', fullname: 'John Fisher' },
     { id: 2, icon: 'https://avt-16.foto.mail.ru/mail/shymatoff/_avatar180?', fullname: 'James Green' },
-    { id: 3, icon: 'http://is1.mzstatic.com/image/thumb/Purple111/v4/37/43/2c/37432c4f-5f7e-0e2c-eb95-557c91a1df02/pr_source.png/100x100bb-85.jpg', fullname: 'Kate Williams' },
+    { id: 3, icon: 'https://sommera5.ru/wp-content/uploads/2021/01/EuniceBrown-300x300.jpg', fullname: 'Kate Williams' },
     { id: 4, icon: 'https://sun9-25.userapi.com/oumKkt3fmMjJigWT02ikaMxcggmW9jYKsfRF7w/SqVuKBwbht0.jpg', fullname: 'Vasya Pupkin' },
     { id: 5, icon: 'https://taniku.kulonprogokab.go.id/assets_frontend/img/pelaku_usaha/fhgjgfjhghfgjh1.png', fullname: 'Alexander Underground' },
     { id: 6, icon: 'https://sun9-3.userapi.com/s/v1/ig2/1dPzrO-qb_O4QN4zE36Zi1MKVyUMmoNvdVMKNRXTn6ElDnycWDjDUe1O9tPwmu5NdHaz9tz-4NHrOPEqabCvh-rx.jpg?size=400x400&quality=95&crop=102,102,819,819&ava=1', fullname: 'Larisa Metyagina' },
